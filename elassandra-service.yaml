@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: elassandra
+  name: elassandra
+spec:
+  clusterIP: None
+  ports:
+    - name: cassandra
+      port: 9042
+    - name: http
+      port: 9200
+    - name: transport
+      port: 9300
+  selector:
+    app: elassandra

@@ -1,0 +1,48 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elassandra-data-1
+  labels:
+    type: local
+    app: elassandra
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/data/elassandra-data-1
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elassandra-data-2
+  labels:
+    type: local
+    app: elassandra
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/data/elassandra-data-2
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elassandra-data-3
+  labels:
+    type: local
+    app: elassandra
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/data/elassandra-data-3
+  persistentVolumeReclaimPolicy: Recycle
