@@ -52,7 +52,7 @@ And to verify the state of the statefulset:
 Assuming that the default namespace was used, the service is accessible via `elassandra.svc.default.cluster.local`
 
 ## Checking Cassandra nodes:
-`$ kubectl exec -ti cassandra-0 nodetool status`
+`$ kubectl exec -ti elassandra-0 nodetool status`
 
 ## Checking ElasticSearch status:
 `$ curl http://elassandra.svc.default.cluster.local:9200`
