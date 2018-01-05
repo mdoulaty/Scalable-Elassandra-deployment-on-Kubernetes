@@ -1,14 +1,14 @@
 # Scalable multi-node Elassandra deployment on Kubernetes Cluster
-This is mostly based on [this](https://github.com/IBM/scalable-cassandra-deployment-on-kubernetes) repository, but it is modified for [Elassandra](https://github.com/strapdata/elassandra).
+This recipe is mostly based on [this](https://github.com/IBM/scalable-cassandra-deployment-on-kubernetes) repository, but it is modified for [Elassandra](https://github.com/strapdata/elassandra).
 It uses statefulsets for storing data persistantly and it is easy to scale up and down!
 
 It is assumed that you are already familiary with Cassandra, EalsticSearch and Kubernetes and you have a working Kubernetes cluster. 
 
 ## tldr;
 ```
-$ kubectl -f elassandra-service.yaml
-$ kubectl -f local-volumes.yaml
-$ kubectl -f elassandra-statefulset.yaml
+$ kubectl create -f elassandra-service.yaml
+$ kubectl create -f local-volumes.yaml
+$ kubectl create -f elassandra-statefulset.yaml
 ```
 
 ## Elassandra service
