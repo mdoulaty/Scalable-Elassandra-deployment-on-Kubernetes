@@ -1,3 +1,6 @@
+Strapdata (the company behind Elassandra) has now an official repository for Elassandra on Kubernetes (which is forked from this repository). Please check it out [here](https://github.com/strapdata/kubernetes-elassandra). This repository is no longer maintained.
+
+
 # Scalable multi-node Elassandra deployment on Kubernetes Cluster
 This recipe is mostly based on [this](https://github.com/IBM/scalable-cassandra-deployment-on-kubernetes) repository, but it is modified for [Elassandra](https://github.com/strapdata/elassandra).
 It uses statefulsets for storing data persistantly and it is easy to scale up and down!
